@@ -3,7 +3,9 @@
 This repository contains the implementation of the **HDBSCAN\*** framework (Hierarchical Density-Based Spatial Clustering of Applications with Noise), along with the **GLOSH** outlier detection method.
 
 **Paper Title:** Hierarchical Density Estimates for Data Clustering, Visualization, and Outlier Detection
+
 **Authors:** Ricardo J. G. B. Campello, Davoud Moulavi, Arthur Zimek, and Jörg Sander
+
 **Journal:** ACM Transactions on Knowledge Discovery from Data (TKDD), Vol. 10, No. 1, Article 5 (July 2015)
 
 ![](images/hdbscan_evolution.gif)
@@ -48,6 +50,6 @@ This repository is organized into three main modules corresponding to the primar
 | File Name | Description | Related Sections |
 | :--- | :--- | :--- |
 | `HDBSCAN_algorithm.py` | **Core Algorithm & Visualization.** <br> • Contains the definition, explanation, and implementation of **HDBSCAN\*** (Algorithms 1 & 2). <br> • Generates the **HDBSCAN\* hierarchy** and simplified cluster tree. <br> • Includes visualization tools: **Dendrograms**, **Reachability Plots**, and **Silhouette Plots**. | Sec. 3 & 4 |
-| `Optimal_non_hierarchical_clustering.py` | **Flat Clustering Extraction.** <br> • Implements the optimization method to extract a flat, non-overlapping clustering solution from the hierarchy. <br> • Maximizes the overall **Cluster Stability** (relative excess of mass) for unsupervised learning. <br> • Can be adapted for semi-supervised constraints (Algorithm 3). | Sec. 5 |
+| `Optimal_non_hierarchical_clustering.py` | **Flat Clustering Extraction.** <br> • Implements the optimization method to extract a flat, non-overlapping clustering solution from the hierarchy. <br> • Maximizes the overall **Cluster Stability** (relative excess of mass) for unsupervised learning. | Sec. 5 |
 | `Outlier_detection.py` | **GLOSH Outlier Scores.** <br> • Implements the **GLOSH** (Global-Local Outlier Scores from Hierarchies) method (Algorithm 4). <br> • Computes scores based on the relationship between an object's density and the density of its associated cluster in the hierarchy. | Sec. 6 |
 
